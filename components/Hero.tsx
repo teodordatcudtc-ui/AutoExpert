@@ -37,7 +37,7 @@ export default function Hero() {
     if (isMobile) {
       carouselInterval = setInterval(() => {
         setCurrentCard((prev) => (prev + 1) % 3)
-      }, 3000)
+      }, 5000) // Changed from 3000 to 5000ms
     }
 
     return () => {
@@ -136,8 +136,8 @@ export default function Hero() {
           </motion.div>
 
           {/* Mobile Carousel */}
-          <div className="md:hidden pt-12">
-            <div className="relative overflow-hidden">
+          <div className="md:hidden pt-8">
+            <div className="relative overflow-hidden max-w-sm mx-auto">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentCard}
@@ -145,21 +145,21 @@ export default function Hero() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -100 }}
                   transition={{ duration: 0.5 }}
-                  className="bg-white/10 backdrop-blur-custom rounded-lg p-6 border border-white/20"
+                  className="bg-white/10 backdrop-blur-custom rounded-lg p-4 border border-white/20"
                 >
                   {(() => {
                     const card = infoCards[currentCard]
                     const IconComponent = card.icon
                     return (
                       <>
-                        <IconComponent className="w-8 h-8 text-primary-red mx-auto mb-4" />
-                        <h3 className="font-heading font-semibold text-lg mb-2 text-center">{card.title}</h3>
+                        <IconComponent className="w-6 h-6 text-primary-red mx-auto mb-3" />
+                        <h3 className="font-heading font-semibold text-base mb-2 text-center">{card.title}</h3>
                         {card.link ? (
-                          <a href={card.link} className="text-gray-300 text-sm hover:text-primary-red transition-colors block text-center">
+                          <a href={card.link} className="text-gray-300 text-xs hover:text-primary-red transition-colors block text-center">
                             {card.content}
                           </a>
                         ) : (
-                          <p className="text-gray-300 text-sm whitespace-pre-line text-center">{card.content}</p>
+                          <p className="text-gray-300 text-xs whitespace-pre-line text-center">{card.content}</p>
                         )}
                       </>
                     )

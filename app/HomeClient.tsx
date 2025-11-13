@@ -31,7 +31,7 @@ export default function HomeClient() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-black mb-6">
               Serviciile Noastre
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="hidden md:block text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Oferim servicii complete de vulcanizare și întreținere auto cu echipamente moderne 
               și personal calificat pentru a-ți asigura siguranța pe drum.
             </p>
