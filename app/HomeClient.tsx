@@ -164,8 +164,89 @@ export default function HomeClient() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Image Section 1 - Atelier */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="relative overflow-hidden rounded-lg shadow-xl aspect-[4/3] bg-gradient-to-br from-primary-red/20 to-primary-blue/20 flex items-center justify-center"
+            >
+              <div className="text-center p-8">
+                <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Car className="w-12 h-12 text-white" />
+                </div>
+                <p className="text-white/80 font-semibold text-lg">Atelier Modern</p>
+                <p className="text-white/60 text-sm mt-2">Imagine placeholder</p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-black mb-6">
+                Atelier Modern și Echipamente Profesionale
+              </h2>
+              <p className="text-xl text-gray-600 leading-relaxed mb-6">
+                Lucrăm cu echipamente de ultimă generație pentru a asigura servicii de cea mai înaltă calitate. 
+                Atelierul nostru este dotat cu tehnologie modernă și personal calificat.
+              </p>
+              <Link href="/galerie" className="btn-primary inline-block">
+                Vezi Galeria
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Section 2 - Servicii */}
       <section className="section-padding bg-primary-light">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="order-2 lg:order-1"
+            >
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-black mb-6">
+                Servicii Complete de Calitate
+              </h2>
+              <p className="text-xl text-gray-600 leading-relaxed mb-6">
+                De la schimb anvelope la reparații complexe, oferim o gamă completă de servicii auto. 
+                Fiecare serviciu este executat cu atenție la detalii și respectând standardele de calitate.
+              </p>
+              <Link href="/servicii" className="btn-primary inline-block">
+                Vezi Serviciile
+              </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="relative overflow-hidden rounded-lg shadow-xl aspect-[4/3] order-1 lg:order-2 bg-gradient-to-br from-primary-blue/20 to-primary-red/20 flex items-center justify-center"
+            >
+              <div className="text-center p-8">
+                <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Wrench className="w-12 h-12 text-white" />
+                </div>
+                <p className="text-white/80 font-semibold text-lg">Servicii Profesionale</p>
+                <p className="text-white/60 text-sm mt-2">Imagine placeholder</p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

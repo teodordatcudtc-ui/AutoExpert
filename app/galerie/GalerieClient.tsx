@@ -245,10 +245,10 @@ export default function GalerieClient() {
                   className="group cursor-pointer"
                   onClick={() => openLightbox(index)}
                 >
-                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105 aspect-square">
                     {/* Placeholder */}
                     {!loadedImages.has(image.id) && (
-                      <div className="aspect-square bg-gray-200 animate-pulse flex items-center justify-center">
+                      <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
                         <Camera className="w-12 h-12 text-gray-400" />
                       </div>
                     )}
@@ -258,7 +258,7 @@ export default function GalerieClient() {
                       data-image-id={image.id}
                       data-src={image.src}
                       alt={image.alt}
-                      className={`aspect-square object-cover w-full transition-opacity duration-300 ${
+                      className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
                         loadedImages.has(image.id) ? 'opacity-100' : 'opacity-0'
                       }`}
                       loading="lazy"
@@ -279,7 +279,7 @@ export default function GalerieClient() {
                     </div>
                     
                     {/* Category Badge */}
-                    <div className="absolute top-3 left-3">
+                    <div className="absolute top-3 left-3 z-10">
                       <span className="bg-primary-red text-white text-xs px-2 py-1 rounded-full font-medium">
                         {categories.find(cat => cat.id === image.category)?.name}
                       </span>
@@ -287,7 +287,7 @@ export default function GalerieClient() {
                   </div>
                   
                   {/* Image Title */}
-                  <div className="mt-3">
+                  <div className="mt-3 mb-0">
                     <h3 className="font-heading font-semibold text-primary-black group-hover:text-primary-red transition-colors duration-200">
                       {image.title}
                     </h3>

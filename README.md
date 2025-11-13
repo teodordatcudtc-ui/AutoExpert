@@ -109,8 +109,7 @@ npm run export
 - **Prețuri** (`/preturi`) - Pachete și prețuri transparente
 - **Galerie** (`/galerie`) - Imagini cu lazy loading și lightbox
 - **Despre** (`/despre`) - Informații despre afacere și echipă
-- **Contact** (`/contact`) - Formular contact și Google Maps
-- **Programări** (`/programari`) - Formular de programare
+- **Programări** (`/programari`) - Formular programare, informații contact, hartă și direcții
 - **FAQ** (`/faq`) - Întrebări frecvente
 
 ### Pagini legale

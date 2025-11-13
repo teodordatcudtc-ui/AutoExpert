@@ -332,7 +332,7 @@ export default function DespreClient() {
               <Link href="/programari" className="bg-white text-primary-red hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-all duration-200 hover:translate-y-[-3px] hover:shadow-xl text-lg">
                 Programează-te Acum
               </Link>
-              <Link href="/contact" className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 rounded-lg font-semibold transition-all duration-200 text-lg">
+              <Link href="/programari" className="border-2 border-white text-white hover:bg-white hover:text-primary-red px-8 py-4 rounded-lg font-semibold transition-all duration-200 text-lg">
                 Vezi Contact
               </Link>
             </div>

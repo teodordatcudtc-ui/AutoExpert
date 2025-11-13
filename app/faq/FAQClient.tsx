@@ -38,7 +38,7 @@ export default function FAQClient() {
               >
                 Sună: {ContactInfo.phone}
               </a>
-              <Link href="/contact" className="btn-secondary text-lg px-8 py-4">
+              <Link href="/programari" className="btn-secondary text-lg px-8 py-4">
                 Contactează-ne
               </Link>
             </div>
@@ -247,7 +247,7 @@ export default function FAQClient() {
                 </a>
                 
                 <Link 
-                  href="/contact"
+                  href="/programari"
                   className="flex items-center justify-center space-x-3 bg-white/20 rounded-lg p-4 hover:bg-white/30 transition-colors"
                 >
                   <Mail className="w-6 h-6 text-white" />

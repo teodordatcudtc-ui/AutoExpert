@@ -172,6 +172,5 @@ export const Navigation = [
   { name: 'Prețuri', href: '/preturi' },
   { name: 'Galerie', href: '/galerie' },
   { name: 'Despre', href: '/despre' },
-  { name: 'Contact', href: '/contact' },
   { name: 'Programări', href: '/programari' },
 ]
